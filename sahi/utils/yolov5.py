@@ -8,8 +8,8 @@ class Yolov5TestConstants:
     YOLOV5N_MODEL_URL = "https://github.com/ultralytics/yolov5/releases/download/v6.0/yolov5n.pt"
     YOLOV5N_MODEL_PATH = "tests/data/models/yolov5/yolov5n.pt"
 
-    YOLOV5S6_MODEL_URL = "https://github.com/ultralytics/yolov5/releases/download/v5.0/yolov5s6.pt"
-    YOLOV5S6_MODEL_PATH = "tests/data/models/yolov5/yolov5s6.pt"
+    YOLOV5S6_MODEL_URL = "https://drive.google.com/u/0/uc?id=1zxaHeLDyID9YU4-hqK7KNepXIwbTkRIO&export=download"
+    YOLOV5S6_MODEL_PATH = "tests/data/models/yolov5/yolov5s-face.pt"
 
     YOLOV5M6_MODEL_URL = "https://github.com/ultralytics/yolov5/releases/download/v5.0/yolov5m6.pt"
     YOLOV5M6_MODEL_PATH = "tests/data/models/yolov5/yolov5m6.pt"
