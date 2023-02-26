@@ -14,6 +14,9 @@ class Yolov5TestConstants:
     YOLOV5M6_MODEL_URL = "https://github.com/ultralytics/yolov5/releases/download/v5.0/yolov5m6.pt"
     YOLOV5M6_MODEL_PATH = "tests/data/models/yolov5/yolov5m6.pt"
 
+    YOLOV5F_MODEL_URL = "https://drive.google.com/u/0/uc?id=1zxaHeLDyID9YU4-hqK7KNepXIwbTkRIO&export=download"
+    YOLOV5F_MODEL_PATH = "tests/data/models/yolov5/yolov5s-face.pt"
+
 
 def download_yolov5n_model(destination_path: Optional[str] = None):
 
@@ -25,6 +28,19 @@ def download_yolov5n_model(destination_path: Optional[str] = None):
     if not path.exists(destination_path):
         urllib.request.urlretrieve(
             Yolov5TestConstants.YOLOV5N_MODEL_URL,
+            destination_path,
+        )
+
+def download_yolov5face_model(destination_path: Optional[str] = None):
+
+    if destination_path is None:
+        destination_path = Yolov5TestConstants.YOLOV5F_MODEL_PATH
+
+    Path(destination_path).parent.mkdir(parents=True, exist_ok=True)
+
+    if not path.exists(destination_path):
+        urllib.request.urlretrieve(
+            Yolov5TestConstants.YOLOV5F_MODEL_URL,
             destination_path,
         )
 
